@@ -1,0 +1,10 @@
+data
+exp
+figure
+script
+.vscode
+__pycache__
+dist
+build
+*.pth
+*.egg-info

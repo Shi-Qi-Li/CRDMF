@@ -1,0 +1,42 @@
+# Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization
+
+This is an official implementation of [Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization](https://arxiv.org/abs/2409.09790) that is accepted to 2025 IEEE International Conference on Robotics & Automation (ICRA).
+
+## Installation
+First, create the conda environment.
+```
+conda create -n crdmf python=3.9
+conda activate crdmf
+pip install -r requirements.txt
+```
+Then, install the [graph_ops](model/graph_ops/README.md) in `./model`.
+
+
+## Data Preparation
+The processed 1DSfM dataset can be found from [DMF-synch](https://github.com/gktejus/DMF-synch).
+
+Please put all `.pt` and `.mat` files to `./data/1dsfm`.
+
+## Run
+Use the following command to run the experiment on one scenario.
+```
+python main.py --config config/1dsfm/Alamo.yaml
+```
+We also provide a script to run all experiments on 1DSfM.
+```
+sh run_1dsfm.sh
+```
+
+## Cite
+If you find this code useful for your work, please consider citing:
+```
+@article{li2024multiple,
+  title={Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization},
+  author={Li, Shiqi and Zhu, Jihua and Xie, Yifan and Hu, Naiwen and Zhu, Mingchen and Li, Zhongyu and Wang, Di},
+  journal={arXiv preprint arXiv:2409.09790},
+  year={2024}
+}
+```
+
+## Acknowledgement
+We thank the authors of the [DMF-synch](https://github.com/gktejus/DMF-synch), [HARA](https://github.com/sunghoon031/HARA) for open sourcing their codes.

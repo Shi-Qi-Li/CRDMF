@@ -1,0 +1,35 @@
+experiment_name: &experiment_name Madrid_Metropolis
+camera_num: 341
+
+iteration: &iteration 100000
+seed: 1234
+
+
+dataset:
+  name: ODSFM
+  scenario_name: *experiment_name
+  data_path: ./data/1dsfm
+  init_method: chordal
+  delete_edge: True
+
+model:
+  name: Half_MLP
+  dim: 1023
+  init_scale: 1.0e-3
+  use_svd: False
+
+loss:
+  name: Regression_Loss
+  p: 1
+
+optimizer:
+  name: SGD
+  lr: 0.3
+  momentum: 0.9
+
+interval: 10000
+
+reweight_start: 40000
+reweight_interval: 5000
+
+hypotheses_iteration: 10000

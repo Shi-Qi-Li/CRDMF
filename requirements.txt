@@ -1,0 +1,9 @@
+torch==2.0
+pyyaml
+easydict
+numpy==1.26.3
+tqdm
+scipy==1.12.0
+tensorboard
+pybind11
+matplotlib
