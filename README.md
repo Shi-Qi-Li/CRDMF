@@ -1,6 +1,6 @@
 # Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization
 
-This is an official implementation of [Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization](https://arxiv.org/abs/2409.09790) that is accepted to 2025 IEEE International Conference on Robotics & Automation (ICRA).
+This is an official implementation of [*Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization*](https://ieeexplore.ieee.org/document/11128797) that is accepted to 2025 IEEE International Conference on Robotics & Automation (ICRA).
 
 ## Overview Video
 [![Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization](https://i.ytimg.com/vi/g4_qnrJlu5Y/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLB-FSfjz7fVKu1OLgdNDXPNgGNS8Q)](http://www.youtube.com/watch?v=g4_qnrJlu5Y&t "Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization")
@@ -33,11 +33,13 @@ sh run_1dsfm.sh
 ## Cite
 If you find this code useful for your work, please consider citing:
 ```
-@article{li2024multiple,
+@inproceedings{li2025multiple,
   title={Multiple Rotation Averaging with Constrained Reweighting Deep Matrix Factorization},
-  author={Li, Shiqi and Zhu, Jihua and Xie, Yifan and Hu, Naiwen and Zhu, Mingchen and Li, Zhongyu and Wang, Di},
-  journal={arXiv preprint arXiv:2409.09790},
-  year={2024}
+  author={Li, Shiqi and Zhu, Jihua and Xie, Yifan and Hu, Naiwen and Zhu, Mingchen and Li, Zhongyu and Wang, Di and Lu, Huimin},
+  booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={16095--16101},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
